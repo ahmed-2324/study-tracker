@@ -1,0 +1,139 @@
+{
+  "subject": "history",
+  "name": {
+    "bn": "ইতিহাস",
+    "en": "History"
+  },
+  "groups": ["humanities"],
+  "papers": [
+    {
+      "paper": 1,
+      "chapters": [
+        {
+          "id": "his1-01",
+          "name": {
+            "bn": "ভারতে ইউরোপীয়দের আগমন",
+            "en": "Arrival of Europeans in India"
+          }
+        },
+        {
+          "id": "his1-02",
+          "name": {
+            "bn": "ইংরেজ ঔপনিবেশিক শাসন: কোম্পানি আমল",
+            "en": "British Colonial Rule: Company Period"
+          }
+        },
+        {
+          "id": "his1-03",
+          "name": {
+            "bn": "ইংরেজ ঔপনিবেশিক শাসন: ব্রিটিশ আমল",
+            "en": "British Colonial Rule: British Period"
+          }
+        },
+        {
+          "id": "his1-04",
+          "name": {
+            "bn": "পাকিস্তানি আমলে বাংলা: ভাষা আন্দোলন ও এর গতিপ্রকৃতি",
+            "en": "Bengal during the Pakistan Period: The Language Movement and Its Development"
+          }
+        },
+        {
+          "id": "his1-05",
+          "name": {
+            "bn": "পূর্ব বাংলায় স্বায়ত্তশাসন ও স্বাধিকার আন্দোলন",
+            "en": "The Autonomy and Self-Determination Movement in East Bengal"
+          }
+        },
+        {
+          "id": "his1-06",
+          "name": {
+            "bn": "স্বাধীনতার ঘোষণা ও মুক্তিযুদ্ধ",
+            "en": "Declaration of Independence and the Liberation War"
+          }
+        },
+        {
+          "id": "his1-07",
+          "name": {
+            "bn": "মুক্তিযুদ্ধে মুজিবনগর সরকারের ভূমিকা",
+            "en": "Role of the Mujibnagar Government in the Liberation War"
+          }
+        },
+        {
+          "id": "his1-08",
+          "name": {
+            "bn": "মুক্তিযুদ্ধে প্রবাসী বাঙালি ও বিশ্ব সম্প্রদায়",
+            "en": "Expatriate Bengalis and the International Community during the Liberation War"
+          }
+        }
+      ]
+    },
+    {
+      "paper": 2,
+      "chapters": [
+        {
+          "id": "his2-01",
+          "name": {
+            "bn": "শিল্প বিপ্লব",
+            "en": "Industrial Revolution"
+          }
+        },
+        {
+          "id": "his2-02",
+          "name": {
+            "bn": "ফরাসি বিপ্লব",
+            "en": "French Revolution"
+          }
+        },
+        {
+          "id": "his2-03",
+          "name": {
+            "bn": "প্রথম বিশ্বযুদ্ধ এবং ভার্সাই সন্ধি ও লীগ অব নেশনস",
+            "en": "The First World War, the Treaty of Versailles and the League of Nations"
+          }
+        },
+        {
+          "id": "his2-04",
+          "name": {
+            "bn": "বলশেভিক বিপ্লব",
+            "en": "Bolshevik Revolution"
+          }
+        },
+        {
+          "id": "his2-05",
+          "name": {
+            "bn": "হিটলার ও মুসোলিনির উত্থান এবং দ্বিতীয় বিশ্বযুদ্ধ",
+            "en": "The Rise of Hitler and Mussolini and the Second World War"
+          }
+        },
+        {
+          "id": "his2-06",
+          "name": {
+            "bn": "জাতিসংঘ ও বিশ্বশান্তি",
+            "en": "The United Nations and World Peace"
+          }
+        },
+        {
+          "id": "his2-07",
+          "name": {
+            "bn": "স্নায়ুযুদ্ধ: পুঁজিবাদ ও সমাজতান্ত্রিক বিশ্বের দ্বন্দ্ব",
+            "en": "The Cold War: Conflict between the Capitalist and Socialist Worlds"
+          }
+        },
+        {
+          "id": "his2-08",
+          "name": {
+            "bn": "স্নায়ুযুদ্ধ-পরবর্তী বিশ্ব",
+            "en": "The Post-Cold War World"
+          }
+        },
+        {
+          "id": "his2-09",
+          "name": {
+            "bn": "বর্ণবাদবিরোধী আন্দোলন",
+            "en": "Anti-Racism Movements"
+          }
+        }
+      ]
+    }
+  ]
+}

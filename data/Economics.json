@@ -1,0 +1,132 @@
+{
+  "subject": "economics",
+  "name": {
+    "bn": "অর্থনীতি",
+    "en": "Economics"
+  },
+  "groups": ["humanities"],
+  "papers": [
+    {
+      "paper": 1,
+      "chapters": [
+        {
+          "id": "eco1-01",
+          "name": {
+            "bn": "অর্থনীতির মৌলিক ধারণা",
+            "en": "Basic Concepts of Economics"
+          }
+        },
+        {
+          "id": "eco1-02",
+          "name": {
+            "bn": "ভোক্তা ও উৎপাদকের আচরণ",
+            "en": "Consumer and Producer Behavior"
+          }
+        },
+        {
+          "id": "eco1-03",
+          "name": {
+            "bn": "চাহিদা ও যোগান",
+            "en": "Demand and Supply"
+          }
+        },
+        {
+          "id": "eco1-04",
+          "name": {
+            "bn": "উৎপাদন ও সংগঠন",
+            "en": "Production and Organization"
+          }
+        },
+        {
+          "id": "eco1-05",
+          "name": {
+            "bn": "বাজার",
+            "en": "Market"
+          }
+        },
+        {
+          "id": "eco1-06",
+          "name": {
+            "bn": "বণ্টন",
+            "en": "Distribution"
+          }
+        },
+        {
+          "id": "eco1-07",
+          "name": {
+            "bn": "বাংলাদেশের কৃষি",
+            "en": "Agriculture of Bangladesh"
+          }
+        },
+        {
+          "id": "eco1-08",
+          "name": {
+            "bn": "বাংলাদেশের শিল্প",
+            "en": "Industry of Bangladesh"
+          }
+        }
+      ]
+    },
+    {
+      "paper": 2,
+      "chapters": [
+        {
+          "id": "eco2-01",
+          "name": {
+            "bn": "বাংলাদেশের অর্থনীতি",
+            "en": "Economy of Bangladesh"
+          }
+        },
+        {
+          "id": "eco2-02",
+          "name": {
+            "bn": "জাতীয় আয়",
+            "en": "National Income"
+          }
+        },
+        {
+          "id": "eco2-03",
+          "name": {
+            "bn": "অর্থ ও ব্যাংক",
+            "en": "Money and Banking"
+          }
+        },
+        {
+          "id": "eco2-04",
+          "name": {
+            "bn": "সরকারি অর্থব্যবস্থা",
+            "en": "Public Finance"
+          }
+        },
+        {
+          "id": "eco2-05",
+          "name": {
+            "bn": "আন্তর্জাতিক বাণিজ্য",
+            "en": "International Trade"
+          }
+        },
+        {
+          "id": "eco2-06",
+          "name": {
+            "bn": "অর্থনৈতিক উন্নয়ন ও পরিকল্পনা",
+            "en": "Economic Development and Planning"
+          }
+        },
+        {
+          "id": "eco2-07",
+          "name": {
+            "bn": "জনসংখ্যা ও মানবসম্পদ",
+            "en": "Population and Human Resources"
+          }
+        },
+        {
+          "id": "eco2-08",
+          "name": {
+            "bn": "দারিদ্র্য",
+            "en": "Poverty"
+          }
+        }
+      ]
+    }
+  ]
+}

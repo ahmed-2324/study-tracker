@@ -1,0 +1,111 @@
+{
+  "subject": "islamic-history-culture",
+  "name": {
+    "bn": "ইসলামের ইতিহাস ও সংস্কৃতি",
+    "en": "Islamic History and Culture"
+  },
+  "groups": ["humanities"],
+  "papers": [
+    {
+      "paper": 1,
+      "chapters": [
+        {
+          "id": "ihc1-01",
+          "name": {
+            "bn": "প্রাক-ইসলামি আরব",
+            "en": "Pre-Islamic Arabia"
+          }
+        },
+        {
+          "id": "ihc1-02",
+          "name": {
+            "bn": "হযরত মুহাম্মদ (স.) (৫৭০-৬৩২ খ্রি.)",
+            "en": "Prophet Muhammad (570–632 CE)"
+          }
+        },
+        {
+          "id": "ihc1-03",
+          "name": {
+            "bn": "খুলাফায়ে রাশেদিন",
+            "en": "The Rightly Guided Caliphs"
+          }
+        },
+        {
+          "id": "ihc1-04",
+          "name": {
+            "bn": "উমাইয়া খিলাফত",
+            "en": "Umayyad Caliphate"
+          }
+        },
+        {
+          "id": "ihc1-05",
+          "name": {
+            "bn": "আব্বাসি খিলাফত",
+            "en": "Abbasid Caliphate"
+          }
+        },
+        {
+          "id": "ihc1-06",
+          "name": {
+            "bn": "স্পেনে উমাইয়া শাসন",
+            "en": "Umayyad Rule in Spain"
+          }
+        },
+        {
+          "id": "ihc1-07",
+          "name": {
+            "bn": "উত্তর আফ্রিকায় ফাতেমি খিলাফত",
+            "en": "Fatimid Caliphate in North Africa"
+          }
+        }
+      ]
+    },
+    {
+      "paper": 2,
+      "chapters": [
+        {
+          "id": "ihc2-01",
+          "name": {
+            "bn": "ভারতে মুসলিম শাসন প্রতিষ্ঠা",
+            "en": "Establishment of Muslim Rule in India"
+          }
+        },
+        {
+          "id": "ihc2-02",
+          "name": {
+            "bn": "দিল্লি সুলতানাত যুগ (১২০৬-১৫২৬ খ্রি.)",
+            "en": "The Delhi Sultanate Period (1206–1526 CE)"
+          }
+        },
+        {
+          "id": "ihc2-03",
+          "name": {
+            "bn": "বাংলায় কোম্পানি ও ঔপনিবেশিক শাসন",
+            "en": "Company and Colonial Rule in Bengal"
+          }
+        },
+        {
+          "id": "ihc2-04",
+          "name": {
+            "bn": "বাংলার ইতিহাস (পাকিস্তান আমল)",
+            "en": "History of Bengal during the Pakistan Period"
+          }
+        },
+        {
+          "id": "ihc2-05",
+          "name": {
+            "bn": "স্বাধীন ও সার্বভৌম বাংলাদেশের অভ্যুদয়",
+            "en": "Emergence of Independent and Sovereign Bangladesh"
+          }
+        },
+        {
+          "id": "ihc2-06",
+          "name": {
+            "bn": "ভারত উপমহাদেশে মুঘল শাসন",
+            "en": "Mughal Rule in the Indian Subcontinent"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "subject": "psychology",
+  "name": {
+    "bn": "মনোবিজ্ঞান",
+    "en": "Psychology"
+  },
+  "groups": ["humanities"],
+  "papers": [
+    {
+      "paper": 1,
+      "chapters": [
+        {
+          "id": "psy1-01",
+          "name": {
+            "bn": "মনোবিজ্ঞানের পরিচয়",
+            "en": "Introduction to Psychology"
+          }
+        },
+        {
+          "id": "psy1-02",
+          "name": {
+            "bn": "মনোবিজ্ঞানের ক্রমবিকাশ",
+            "en": "Development of Psychology"
+          }
+        },
+        {
+          "id": "psy1-03",
+          "name": {
+            "bn": "মনোবিজ্ঞানের জৈবিক ভিত্তি",
+            "en": "Biological Basis of Psychology"
+          }
+        },
+        {
+          "id": "psy1-04",
+          "name": {
+            "bn": "অনুভূতি ও সংবেদন",
+            "en": "Feeling and Sensation"
+          }
+        },
+        {
+          "id": "psy1-05",
+          "name": {
+            "bn": "মনোযোগ",
+            "en": "Attention"
+          }
+        },
+        {
+          "id": "psy1-06",
+          "name": {
+            "bn": "প্রেষণা",
+            "en": "Motivation"
+          }
+        },
+        {
+          "id": "psy1-07",
+          "name": {
+            "bn": "আবেগ",
+            "en": "Emotion"
+          }
+        },
+        {
+          "id": "psy1-08",
+          "name": {
+            "bn": "শিখন",
+            "en": "Learning"
+          }
+        },
+        {
+          "id": "psy1-09",
+          "name": {
+            "bn": "স্মৃতি",
+            "en": "Memory"
+          }
+        },
+        {
+          "id": "psy1-10",
+          "name": {
+            "bn": "ভুলে যাওয়া",
+            "en": "Forgetting"
+          }
+        }
+      ]
+    },
+    {
+      "paper": 2,
+      "chapters": [
+        {
+          "id": "psy2-01",
+          "name": {
+            "bn": "মানসিক প্রক্রিয়া",
+            "en": "Mental Processes"
+          }
+        },
+        {
+          "id": "psy2-02",
+          "name": {
+            "bn": "বুদ্ধি",
+            "en": "Intelligence"
+          }
+        },
+        {
+          "id": "psy2-03",
+          "name": {
+            "bn": "ব্যক্তিত্ব",
+            "en": "Personality"
+          }
+        },
+        {
+          "id": "psy2-04",
+          "name": {
+            "bn": "মনোভাব",
+            "en": "Attitude"
+          }
+        },
+        {
+          "id": "psy2-05",
+          "name": {
+            "bn": "মানসিক স্বাস্থ্য ও মানসিক রোগ",
+            "en": "Mental Health and Mental Disorders"
+          }
+        },
+        {
+          "id": "psy2-06",
+          "name": {
+            "bn": "মনোবিজ্ঞানের গবেষণা পদ্ধতি",
+            "en": "Research Methods in Psychology"
+          }
+        },
+        {
+          "id": "psy2-07",
+          "name": {
+            "bn": "সামাজিক মনোবিজ্ঞান",
+            "en": "Social Psychology"
+          }
+        },
+        {
+          "id": "psy2-08",
+          "name": {
+            "bn": "শিশুর বিকাশ",
+            "en": "Child Development"
+          }
+        },
+        {
+          "id": "psy2-09",
+          "name": {
+            "bn": "শিক্ষা মনোবিজ্ঞান",
+            "en": "Educational Psychology"
+          }
+        },
+        {
+          "id": "psy2-10",
+          "name": {
+            "bn": "শিল্প ও কর্ম মনোবিজ্ঞান",
+            "en": "Industrial and Occupational Psychology"
+          }
+        }
+      ]
+    }
+  ]
+}

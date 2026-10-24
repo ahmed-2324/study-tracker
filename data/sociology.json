@@ -1,0 +1,167 @@
+{
+  "subject": "sociology",
+  "name": {
+    "bn": "সমাজবিজ্ঞান",
+    "en": "Sociology"
+  },
+  "groups": ["humanities"],
+  "papers": [
+    {
+      "paper": 1,
+      "chapters": [
+        {
+          "id": "soc1-01",
+          "name": {
+            "bn": "সমাজবিজ্ঞানের উৎপত্তি ও বিকাশ",
+            "en": "Origin and Development of Sociology"
+          }
+        },
+        {
+          "id": "soc1-02",
+          "name": {
+            "bn": "সমাজবিজ্ঞানের বৈজ্ঞানিক মর্যাদা",
+            "en": "Scientific Status of Sociology"
+          }
+        },
+        {
+          "id": "soc1-03",
+          "name": {
+            "bn": "সমাজবিজ্ঞানীদের মতবাদ ও অবদান",
+            "en": "Theories and Contributions of Sociologists"
+          }
+        },
+        {
+          "id": "soc1-04",
+          "name": {
+            "bn": "সমাজবিজ্ঞানের মৌল প্রত্যয়",
+            "en": "Basic Concepts of Sociology"
+          }
+        },
+        {
+          "id": "soc1-05",
+          "name": {
+            "bn": "সামাজিক প্রতিষ্ঠান",
+            "en": "Social Institutions"
+          }
+        },
+        {
+          "id": "soc1-06",
+          "name": {
+            "bn": "সমাজজীবনে প্রভাববিস্তারকারী উপাদান",
+            "en": "Factors Influencing Social Life"
+          }
+        },
+        {
+          "id": "soc1-07",
+          "name": {
+            "bn": "সামাজিকীকরণ প্রক্রিয়া",
+            "en": "Socialization Process"
+          }
+        },
+        {
+          "id": "soc1-08",
+          "name": {
+            "bn": "সামাজিক স্তরবিন্যাস ও অসমতা",
+            "en": "Social Stratification and Inequality"
+          }
+        },
+        {
+          "id": "soc1-09",
+          "name": {
+            "bn": "সামাজিক ব্যবস্থা",
+            "en": "Social System"
+          }
+        },
+        {
+          "id": "soc1-10",
+          "name": {
+            "bn": "বিচ্যুতিমূলক আচরণ এবং অপরাধ",
+            "en": "Deviant Behavior and Crime"
+          }
+        },
+        {
+          "id": "soc1-11",
+          "name": {
+            "bn": "সামাজিক পরিবর্তন",
+            "en": "Social Change"
+          }
+        }
+      ]
+    },
+    {
+      "paper": 2,
+      "chapters": [
+        {
+          "id": "soc2-01",
+          "name": {
+            "bn": "বাংলাদেশে সমাজবিজ্ঞান চর্চার বিকাশ",
+            "en": "Development of Sociology in Bangladesh"
+          }
+        },
+        {
+          "id": "soc2-02",
+          "name": {
+            "bn": "বাংলাদেশের সমাজ ও সংস্কৃতি",
+            "en": "Society and Culture of Bangladesh"
+          }
+        },
+        {
+          "id": "soc2-03",
+          "name": {
+            "bn": "প্রত্নতত্ত্বের ভিত্তিতে বাংলাদেশের সমাজ ও সভ্যতা",
+            "en": "Society and Civilization of Bangladesh Based on Archaeology"
+          }
+        },
+        {
+          "id": "soc2-04",
+          "name": {
+            "bn": "বাংলাদেশের নৃগোষ্ঠীর জীবনধারা",
+            "en": "Lifestyles of Ethnic Groups in Bangladesh"
+          }
+        },
+        {
+          "id": "soc2-05",
+          "name": {
+            "bn": "বাংলাদেশের অভ্যুদয়ের সামাজিক পটভূমি",
+            "en": "Social Background of the Emergence of Bangladesh"
+          }
+        },
+        {
+          "id": "soc2-06",
+          "name": {
+            "bn": "বাংলাদেশের গ্রামীণ ও নগর সমাজ",
+            "en": "Rural and Urban Society of Bangladesh"
+          }
+        },
+        {
+          "id": "soc2-07",
+          "name": {
+            "bn": "বাংলাদেশে বিবাহ, পরিবার ও জ্ঞাতিসম্পর্ক",
+            "en": "Marriage, Family and Kinship in Bangladesh"
+          }
+        },
+        {
+          "id": "soc2-08",
+          "name": {
+            "bn": "বাংলাদেশের সামাজিক পরিবর্তন",
+            "en": "Social Change in Bangladesh"
+          }
+        },
+        {
+          "id": "soc2-09",
+          "name": {
+            "bn": "বাংলাদেশের সামাজিক সমস্যা ও প্রতিকার",
+            "en": "Social Problems and Remedies in Bangladesh"
+          }
+        },
+        {
+          "id": "soc2-10",
+          "name": {
+            "bn": "বাংলাদেশের সামাজিক উন্নয়ন",
+            "en": "Social Development in Bangladesh"
+          }
+        }
+      ]
+    }
+  ]
+}
