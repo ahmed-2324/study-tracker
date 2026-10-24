@@ -1,0 +1,38 @@
+{
+  "subject": "physics",
+  "name": { "bn": "ফিজিক্স", "en": "Physics" },
+  "groups": ["science"],
+  "papers": [
+    {
+      "paper": 1,
+      "chapters": [
+        { "id": "ph1-01", "name": { "bn": "ভৌতজগৎ ও পরিমাপ", "en": "Physical World and Measurement" } },
+        { "id": "ph1-02", "name": { "bn": "ভেক্টর", "en": "Vectors" } },
+        { "id": "ph1-03", "name": { "bn": "গতিবিদ্যা", "en": "Kinematics" } },
+        { "id": "ph1-04", "name": { "bn": "নিউটনীয় বলবিদ্যা", "en": "Newtonian Mechanics" } },
+        { "id": "ph1-05", "name": { "bn": "কাজ, শক্তি ও ক্ষমতা", "en": "Work, Energy and Power" } },
+        { "id": "ph1-06", "name": { "bn": "মহাকর্ষ ও অভিকর্ষ", "en": "Gravitation and Gravity" } },
+        { "id": "ph1-07", "name": { "bn": "পদার্থের গাঠনিক ধর্ম", "en": "Structural Properties of Matter" } },
+        { "id": "ph1-08", "name": { "bn": "পর্যাবৃত্তিক গতি", "en": "Periodic Motion" } },
+        { "id": "ph1-09", "name": { "bn": "তরঙ্গ", "en": "Waves" } },
+        { "id": "ph1-10", "name": { "bn": "আদর্শ গ্যাস ও গ্যাসের গতিতত্ত্ব", "en": " Ideal Gas and Kinetic Theory of Gases" } }
+      ]
+    }, 
+    {
+        "paper": 2,
+        "chapters": [
+        { "id": "ph2-01", "name": { "bn": "তাপগতিবিদ্যা", "en": "Thermodynamics" } },
+        { "id": "ph2-03", "name": { "bn": "চল তড়িৎ", "en": "Current Electricity" } },
+        { "id": "ph2-02", "name": { "bn": "স্থির তড়িৎ", "en": "Static Electricity" } },
+        { "id": "ph2-05", "name": { "bn": "তাড়িতচৌম্বকীয় আবেশ ও পরিবর্তী প্রবাহ", "en": "Electromagnetic Induction and Alternating Current" } },
+        { "id": "ph2-04", "name": { "bn": "তড়িৎ প্রবাহের চৌম্বক ক্রিয়া ও চুম্বকত্ব", "en": "Magnetic Effects of Electric Current and Magnetism" } },
+        { "id": "ph2-06", "name": { "bn": "জ্যামিতিক আলোকবিজ্ঞান", "en": "Geometrical Optics" } },
+        { "id": "ph2-07", "name": { "bn": "ভৌত আলোকবিজ্ঞান", "en": "Physical Optics" } },
+        { "id": "ph2-08", "name": { "bn": "আধুনিক পদার্থবিজ্ঞানের সূচনা", "en": "Introduction to Modern Physics" } },
+        { "id": "ph2-09", "name": { "bn": "পরমাণুর মডেল ও নিউক্লিয়ার পদার্থবিজ্ঞান", "en": "Atomic Models and Nuclear Physics" } },
+        { "id": "ph2-10", "name": { "bn": "সেমিকন্ডাক্টর ও ইলেকট্রনিক্স", "en": "Semiconductors and Electronics" } },
+        { "id": "ph2-11", "name": { "bn": "জ্যোতির্বিজ্ঞান", "en": "Astronomy" } }
+    ]
+    }
+  ]
+}

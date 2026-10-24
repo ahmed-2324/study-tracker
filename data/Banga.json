@@ -1,0 +1,77 @@
+{
+  "subject": "bangla",
+  "name": { "bn": "বাংলা", "en": "Bangla" },
+  "groups": ["All"],
+  "papers": [
+    {
+      "paper": 1,
+  "story": [
+    { "id": "bn-story-01", "name": { "bn": "প্রতিদান", "en": "Retaliation" } },
+    { "id": "bn-story-02", "name": { "bn": "অপরিচিতা", "en": "The Unknown Woman" } },
+    { "id": "bn-story-03", "name": { "bn": "বিলাসী", "en": "Bilashi" } },
+    { "id": "bn-story-04", "name": { "bn": "তাহারেই পড়ে মনে", "en": "I Remember Her" } },
+    { "id": "bn-story-05", "name": { "bn": "আঠারো বছর বয়স", "en": "Eighteen Years of Age" } },
+    { "id": "bn-story-06", "name": { "bn": "মাসি-পিসি", "en": "Mashi-Pishi" } },
+    { "id": "bn-story-07", "name": { "bn": "সোনার তরী", "en": "The Golden Boat" } },
+    { "id": "bn-story-08", "name": { "bn": "বিদ্রোহী", "en": "The Rebel" } },
+    { "id": "bn-story-09", "name": { "bn": "ফেব্রুয়ারি ১৯৬৯", "en": "February 1969" } },
+    { "id": "bn-story-10", "name": { "bn": "প্রত্যাবর্তনের লজ্জা", "en": "The Shame of Return" } },
+    { "id": "bn-story-11", "name": { "bn": "রেইনকোট", "en": "Raincoat" } }
+
+    ]
+    }, 
+
+    {
+        "paper": 1,
+        "poem": [
+    { "id": "bn-poem-01", "name": { "bn": "যৌবনের গান", "en": "Song of Youth" } },
+    { "id": "bn-poem-03", "name": { "bn": "আমি কিংবদন্তীর কথা বলছি", "en": "I Speak of Legend" } },
+    { "id": "bn-poem-04", "name": { "bn": "ঋতুবর্ণন", "en": "Description of Seasons" } },
+    { "id": "bn-poem-05", "name": { "bn": "বাংলালার নব লেখকদিগের প্রতি নিবেদন", "en": "An Appeal to the New Writers of Bengal" } },
+    { "id": "bn-poem-06", "name": { "bn": "বিভীষণের প্রতি মেঘনাদ", "en": "Meghnad to Bibhishan" } },
+    { "id": "bn-poem-07", "name": { "bn": "পদ্মা", "en": "Padma" } },
+    { "id": "bn-poem-08", "name": { "bn": "সূচেতনা", "en": "Suchetana" } },
+    { "id": "bn-poem-09", "name": { "bn": "সাহিত্যে খেলা", "en": "Play in Literature" } },
+    { "id": "bn-poem-10", "name": { "bn": "অর্ধাঙ্গী", "en": "The Better Half" } },
+    { "id": "bn-poem-11", "name": { "bn": "জীবন ও বৃক্ষ", "en": "Life and the Tree" } },
+    { "id": "bn-poem-12", "name": { "bn": "গন্তব্য কাবুল", "en": "Destination Kabul" } },
+    { "id": "bn-poem-13", "name": { "bn": "কপিলদাস মুর্মুর শেষ কাজ", "en": "Kapil Das Murmu's Last Work" } },
+    { "id": "bn-poem-14", "name": { "bn": "সুখ", "en": "Happiness" } },
+    { "id": "bn-poem-15", "name": { "bn": "নেকলেস", "en": "The Necklace" } }
+    ]
+    }, 
+
+    {
+
+    "novel & drama": [
+        { "id": "nv-01", "name": { "bn": "লালসালু", "en": "Lalsalu" } },
+        { "id": "dm-01", "name": { "bn": "সিরাজউদ্দৌলা", "en": "Siraj-ud-Daulah" } }
+    ]
+      },
+    
+    {
+    "paper": 2,
+        "topics": [
+    { "id": "bn-topic-01", "name": { "bn": "বাংলা উচ্চারণের নিয়ম", "en": "Rules of Bengali Pronunciation" } },
+    { "id": "bn-topic-02", "name": { "bn": "বাংলা বানানের নিয়ম ও প্রমিত বানান", "en": "Bengali Spelling Rules and Standard Spelling" } },
+    { "id": "bn-topic-03", "name": { "bn": "ব্যাকরণিক শব্দশ্রেণি", "en": "Grammatical Word Classes" } },
+    { "id": "bn-topic-04", "name": { "bn": "উপসর্গ, প্রত্যয় ও সমাস", "en": "Prefixes, Suffixes and Compounds" } },
+    { "id": "bn-topic-05", "name": { "bn": "বাক্যতত্ত্ব ও শুদ্ধ প্রয়োগ", "en": "Sentence Structure and Correct Usage" } },
+    { "id": "bn-topic-06", "name": { "bn": "অপ্রয়োগ ও শুদ্ধ প্রয়োগ", "en": "Incorrect Usage and Correct Usage" } },
+    { "id": "bn-topic-07", "name": { "bn": "পারিভাষিক শব্দ ও অনুবাদ", "en": "Technical Terms and Translation" } },
+    { "id": "bn-topic-08", "name": { "bn": "দিনলিপি ও অভিজ্ঞতা বর্ণনা", "en": "Diary Writing and Description of Experiences" } },
+    { "id": "bn-topic-09", "name": { "bn": "ভাষণ ও প্রতিবেদন", "en": "Speech and Report Writing" } },
+    { "id": "bn-topic-10", "name": { "bn": "ই-মেইল, পত্র ও আবেদনপত্র", "en": "Email, Letter and Application Writing" } },
+    { "id": "bn-topic-11", "name": { "bn": "সারাংশ, সারমর্ম ও সারসংক্ষেপ", "en": "Summary, Gist and Synopsis" } },
+    { "id": "bn-topic-12", "name": { "bn": "ভাবসম্প্রসারণ", "en": "Expansion of Ideas" } },
+    { "id": "bn-topic-13", "name": { "bn": "প্রবন্ধ রচনা", "en": "Essay Writing" } }
+
+      ]
+    }
+  ]
+}
+
+
+
+
+
