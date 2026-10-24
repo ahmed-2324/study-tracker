@@ -21,6 +21,20 @@ window.StudyWelcome = (() => {
       or: "or",
       guest: "Continue as guest",
       warning: "Your data is saved in this browser only. Clearing browser data may permanently erase your progress.",
+      pull: "Pull the cord to switch on your study space",
+      deleteTitle: "Erase your data",
+      eraseDevice: "Erase my data on this device",
+      deleteAccount: "Delete my Studyflow account",
+      deleteIntroGuest: "This permanently erases the HSC tracker data stored in this browser. It cannot be undone.",
+      deleteIntroGoogle: "This permanently deletes your Studyflow sign-in account and this device’s HSC tracker data. Study data is not synced to the cloud, so there are no cloud study records to delete.",
+      deleteItems: "This includes syllabus status, weak-chapter flags, revision history, study sessions, goals, preferences, and the saved account on this device.",
+      typeDelete: "Type DELETE to confirm",
+      confirmDelete: "Confirm permanent deletion",
+      deleting: "Deleting…",
+      deleteError: "Deletion could not be completed. Your browser data is still here. Please try again.",
+      deletedGuest: "Your data on this device has been erased.",
+      deletedGoogle: "Your Studyflow sign-in account and this device’s data have been erased.",
+      reauth: "For security, Google needs you to sign in again before deleting your account.",
       back: "Back to my dashboard",
       signedInAs: "Signed in as",
       cont: "Continue",
@@ -53,7 +67,21 @@ window.StudyWelcome = (() => {
       soonMsg: "Google সাইন-ইন এখনো চালু হয়নি। আপাতত গেস্ট হিসেবে চালিয়ে যেতে পারো।",
       or: "অথবা",
       guest: "গেস্ট হিসেবে চালিয়ে যাও",
-      warning: "তোমার ডেটা শুধু এই ব্রাউজারে সেভ থাকে। ব্রাউজারের ডেটা মুছে ফেললে তোমার অগ্রগতি চিরতরে হারিয়ে যেতে পারে।",
+      warning: "Your data is saved in this browser only. Clearing browser data may permanently erase your progress.",
+      pull: "তোমার পড়ার জায়গার আলো জ্বালাতে কর্ড টানো",
+      deleteTitle: "তোমার ডেটা মুছে ফেলো",
+      eraseDevice: "এই ডিভাইসের ডেটা মুছে ফেলো",
+      deleteAccount: "আমার Studyflow অ্যাকাউন্ট মুছে ফেলো",
+      deleteIntroGuest: "এতে এই ব্রাউজারে থাকা HSC ট্র্যাকার ডেটা স্থায়ীভাবে মুছে যাবে। এটি ফিরিয়ে আনা যাবে না।",
+      deleteIntroGoogle: "এতে তোমার Studyflow সাইন-ইন অ্যাকাউন্ট এবং এই ডিভাইসের HSC ট্র্যাকার ডেটা স্থায়ীভাবে মুছে যাবে। পড়ার ডেটা ক্লাউডে সিঙ্ক হয় না, তাই মুছে ফেলার মতো ক্লাউডের পড়ার রেকর্ড নেই।",
+      deleteItems: "এর মধ্যে সিলেবাসের অবস্থা, দুর্বল অধ্যায়ের চিহ্ন, রিভিশন ইতিহাস, পড়ার সেশন, লক্ষ্য, পছন্দ এবং এই ডিভাইসে সংরক্ষিত অ্যাকাউন্ট অন্তর্ভুক্ত।",
+      typeDelete: "নিশ্চিত করতে DELETE লিখো",
+      confirmDelete: "স্থায়ীভাবে মুছে ফেলা নিশ্চিত করো",
+      deleting: "মুছে ফেলা হচ্ছে…",
+      deleteError: "ডেটা মুছে ফেলা যায়নি। ব্রাউজারের তথ্য এখনো আছে। আবার চেষ্টা করো।",
+      deletedGuest: "এই ডিভাইসের ডেটা মুছে ফেলা হয়েছে।",
+      deletedGoogle: "তোমার Studyflow সাইন-ইন অ্যাকাউন্ট এবং এই ডিভাইসের ডেটা মুছে ফেলা হয়েছে।",
+      reauth: "নিরাপত্তার জন্য অ্যাকাউন্ট মুছতে Google-এ আবার সাইন-ইন করতে হবে।",
       back: "আমার ড্যাশবোর্ডে ফিরে যাও",
       signedInAs: "সাইন-ইন করা আছে:",
       cont: "চালিয়ে যাও",
@@ -91,6 +119,7 @@ window.StudyWelcome = (() => {
   const tr = () => TEXT[lang()];
 
   const needsChoice = () => !read();
+  const isGuest = () => { const a = read(); return Boolean(a && a.mode === "guest"); };
   const isGoogle = () => { const a = read(); return Boolean(a && a.mode === "google"); };
   const label = () => (isGoogle() ? read().name || read().email || "Google" : tr().guestLabel);
   const sublabel = () => (isGoogle() ? read().email || "" : tr().guestSub);
@@ -185,7 +214,7 @@ window.StudyWelcome = (() => {
     const out = button("wl-btn wl-guest", async () => {
       try { if (window.StudyAuth) await StudyAuth.signOut(); } catch { /* still sign out locally */ }
       try { localStorage.removeItem(ACCOUNT_KEY); } catch { /* ignore */ }
-      rerender();
+      show(app, done, { reopen: true, lampOn: true });
     });
     out.append(h("span", "", t.signOut));
     const go = button("wl-btn wl-google", done);
@@ -248,6 +277,7 @@ window.StudyWelcome = (() => {
     card.append(top, h("h2", "", t.welcome), h("p", "wl-choose", t.choose));
     const choicesNode = isGoogle() ? signedIn(app, done, rerender, message) : choices(app, done, opts, message);
     card.append(choicesNode, msg);
+    if (opts.notice) message(opts.notice, "info");
     if (opts.reopen && !isGoogle() && read()) {
       const back = button("wl-back", done);
       back.textContent = t.back;
@@ -256,6 +286,35 @@ window.StudyWelcome = (() => {
 
     inner.append(hero, card);
     root.append(h("span", "wl-glow wl-glow-a"), h("span", "wl-glow wl-glow-b"), inner);
+    const firstVisit = !opts.reopen && !opts.lampOn && (!read() || isGuest());
+    if (firstVisit) {
+      root.classList.add("wl-lamp-pending");
+      const scene = h("div", "wl-scene");
+      scene.setAttribute("role", "dialog");
+      scene.setAttribute("aria-label", t.pull);
+      scene.append(h("div", "wl-scene-brand", "Studyflow"));
+      const art = h("div", "wl-lamp-art");
+      art.setAttribute("aria-hidden", "true");
+      art.innerHTML = '<svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="lampShade" x1="85" y1="40" x2="196" y2="101" gradientUnits="userSpaceOnUse"><stop stop-color="#414b5d"/><stop offset=".42" stop-color="#252d3b"/><stop offset="1" stop-color="#131923"/></linearGradient><linearGradient id="lampStem" x1="124" y1="116" x2="153" y2="218" gradientUnits="userSpaceOnUse"><stop stop-color="#586477"/><stop offset=".5" stop-color="#222a37"/><stop offset="1" stop-color="#414b5d"/></linearGradient><radialGradient id="lampGlow"><stop stop-color="#c8ffec"/><stop offset=".25" stop-color="#83e1c3"/><stop offset="1" stop-color="#83e1c3" stop-opacity="0"/></radialGradient><filter id="lampShadow" x="45" y="10" width="190" height="260" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="8"/></filter></defs><ellipse cx="140" cy="252" rx="60" ry="10" fill="#000" opacity=".45" filter="url(#lampShadow)"/><path d="M101 216h78c14 0 23 8 26 20l2 8H73l2-8c3-12 12-20 26-20Z" fill="url(#lampStem)" stroke="#596579" stroke-width="2"/><path d="M111 217c7-5 16-8 29-8s22 3 29 8" stroke="#768297" stroke-width="1.5" opacity=".55"/><path d="M139 210v-75" stroke="url(#lampStem)" stroke-width="13" stroke-linecap="round"/><path d="M140 134c-1-25 19-42 42-45" stroke="#667287" stroke-width="13" stroke-linecap="round"/><path d="M140 134c-1-25 19-42 42-45" stroke="#252e3b" stroke-width="8" stroke-linecap="round"/><circle cx="140" cy="133" r="10" fill="#252d3b" stroke="#667287" stroke-width="3"/><circle cx="140" cy="133" r="3" fill="#aab4c5"/><path d="M181 89 169 49c-2-7 3-13 10-13h32c7 0 12 6 10 13l-12 40c-2 8-9 13-17 13s-15-5-17-13Z" fill="url(#lampShade)" stroke="#687488" stroke-width="2"/><path d="M171 89h48" stroke="#8792a5" stroke-width="3" stroke-linecap="round"/><path d="M176 48c8-6 23-8 37-3" stroke="#a8b2c3" stroke-width="2" stroke-linecap="round" opacity=".4"/><path class="wl-lamp-bulb" d="M188 96c0 7 5 11 5 17h13c0-6 5-10 5-17" fill="#343c49" stroke="#596579" stroke-width="2"/><path class="wl-lamp-light" d="M189 107h22l22 75h-66l22-75Z" fill="url(#lampGlow)" opacity="0"/><path d="M204 43v40" stroke="#9aa5b8" stroke-width="2" stroke-linecap="round" opacity=".6"/><circle class="wl-lamp-pull" cx="204" cy="85" r="4.5" fill="#aab3c2"/></svg>';
+      const pull = button("wl-cord", () => switchOn());
+      pull.setAttribute("aria-label", t.pull);
+      pull.append(h("span", "wl-cord-line"), h("span", "wl-cord-knob"));
+      let dragStart = null;
+      pull.addEventListener("pointerdown", (event) => { dragStart = event.clientY; pull.classList.add("is-pulling"); pull.setPointerCapture(event.pointerId); });
+      pull.addEventListener("pointermove", (event) => { if (dragStart === null) return; const distance = Math.max(0, Math.min(150, event.clientY - dragStart)); pull.style.setProperty("--pull-distance", `${distance}px`); });
+      pull.addEventListener("pointerup", (event) => { const distance = dragStart === null ? 0 : event.clientY - dragStart; dragStart = null; if (distance > 58) switchOn(); else { pull.classList.remove("is-pulling"); pull.style.removeProperty("--pull-distance"); } });
+      pull.addEventListener("pointercancel", () => { dragStart = null; pull.classList.remove("is-pulling"); pull.style.removeProperty("--pull-distance"); });
+      scene.append(art, pull);
+      const switchOn = () => {
+        if (!scene.isConnected || scene.classList.contains("is-lit")) return;
+        scene.classList.add("is-lit");
+        root.classList.add("wl-revealed");
+        clearTimeout(autoOn);
+        setTimeout(() => scene.remove(), 1100);
+      };
+      root.append(scene);
+      const autoOn = setTimeout(switchOn, 10000);
+    }
     app.replaceChildren(root);
     window.scrollTo(0, 0);
   }
@@ -280,12 +339,60 @@ window.StudyWelcome = (() => {
       if (!isGoogle()) { show(app, done, { reopen: true }); return; }
       try { if (window.StudyAuth) await StudyAuth.signOut(); } catch { /* still sign out locally */ }
       try { localStorage.removeItem(ACCOUNT_KEY); } catch { /* ignore */ }
-      show(app, done);
+      show(app, done, { reopen: true, lampOn: true });
     });
     action.append(h("span", "", isGoogle() ? t.signOut : t.signIn));
     panel.append(action);
+    const wasGoogle = isGoogle();
+    const erase = button("wl-btn wl-delete-trigger wl-small", () => renderDeleteConfirmation());
+    erase.append(h("span", "", wasGoogle ? t.deleteAccount : t.eraseDevice));
+    panel.append(erase);
+    function renderDeleteConfirmation() {
+      panel.querySelector(".wl-delete-confirm")?.remove();
+      const confirm = h("div", "wl-delete-confirm");
+      confirm.append(h("h4", "", t.deleteTitle), h("p", "", wasGoogle ? t.deleteIntroGoogle : t.deleteIntroGuest), h("p", "wl-delete-items", t.deleteItems));
+      const input = document.createElement("input");
+      input.type = "text";
+      input.autocomplete = "off";
+      input.spellcheck = false;
+      input.className = "wl-delete-input";
+      input.placeholder = t.typeDelete;
+      input.setAttribute("aria-label", t.typeDelete);
+      const submit = button("wl-btn wl-delete-submit wl-small", async () => {
+        if (input.value !== "DELETE") return;
+        submit.disabled = true;
+        submit.textContent = t.deleting;
+        try {
+          if (wasGoogle) {
+            if (!window.StudyAuth || !StudyAuth.configured()) throw new Error("auth/not-configured");
+            await StudyAuth.deleteAccount();
+            try { await StudyAuth.signOut(); } catch { /* deleted Firebase users may already be signed out */ }
+          }
+          const keys = [];
+          for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key && key.startsWith("hsc-tracker-")) keys.push(key);
+          }
+          keys.forEach((key) => localStorage.removeItem(key));
+          if (typeof window.resetStudyDataState === "function") window.resetStudyDataState();
+          show(app, done, { reopen: true, lampOn: true, notice: wasGoogle ? t.deletedGoogle : t.deletedGuest });
+        } catch (error) {
+          submit.disabled = false;
+          submit.textContent = t.confirmDelete;
+          const feedback = confirm.querySelector(".wl-delete-error") || h("p", "wl-delete-error");
+          feedback.textContent = error && error.code === "auth/requires-recent-login" ? t.reauth : t.deleteError;
+          confirm.append(feedback);
+        }
+      });
+      submit.textContent = t.confirmDelete;
+      submit.disabled = true;
+      input.addEventListener("input", () => { submit.disabled = input.value !== "DELETE"; });
+      confirm.append(input, submit);
+      panel.append(confirm);
+      input.focus();
+    }
     return panel;
   }
 
-  return { needsChoice, show, label, sublabel, initial, settingsPanel };
+  return { needsChoice, isGuest, show, label, sublabel, initial, settingsPanel };
 })();

@@ -89,3 +89,57 @@
   .wl-bar-fill{width:var(--w)}
   .wl-btn{transition:none}
 }
+
+/* First-visit lamp reveal and irreversible data deletion */
+.wl{--bg:#10131b;--surface:#171b25;--surface-2:#1c2230;--line:#2b3242;--text:#f2f4f8;--muted:#969fb0;--accent:#83e1c3;--accent-ink:#10251e;--amber:#f3c87c;background:#10131b;color:#f2f4f8}
+.wl-warning{background:rgba(243,200,124,.1);border-color:rgba(243,200,124,.42);color:#f3c87c}
+.wl-warning p{color:#f2f4f8}
+.wl-lamp-pending .wl-card{opacity:0}
+.wl-scene{position:fixed;inset:0;z-index:10;display:grid;place-items:center;overflow:hidden;background:#080b11;color:#f2f4f8;transition:opacity .85s .2s ease}
+.wl-scene::before{content:"";position:absolute;width:min(105vw,1000px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(131,225,195,.25) 0,rgba(131,225,195,.12) 28%,rgba(131,225,195,.045) 48%,transparent 70%);opacity:0;transform:scale(.2);transition:transform 1s cubic-bezier(.2,.8,.2,1),opacity .45s ease;pointer-events:none}
+.wl-scene.is-lit::before{opacity:1;transform:scale(1.25)}
+.wl-scene.is-lit{opacity:0;pointer-events:none}
+.wl-scene-brand{position:absolute;top:clamp(28px,7vh,64px);font:700 18px Manrope, sans-serif;letter-spacing:.04em;color:#f2f4f8}
+.wl-lamp-art{position:absolute;left:50%;top:50%;width:280px;height:260px;transform:translate(-50%,-56%);filter:drop-shadow(0 16px 34px #0008)}
+.wl-lamp-art svg{width:100%;height:100%;overflow:visible}
+.wl-lamp-outline{stroke:#414b5d;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;fill:#171b25}
+.wl-lamp-bulb{fill:#343c49;stroke:#566174;stroke-width:3;transition:fill .3s ease,filter .3s ease}
+.wl-lamp-pull{fill:#7d8798;stroke:#171b25;stroke-width:3}
+.wl-scene.is-lit .wl-lamp-bulb{fill:#83e1c3;filter:drop-shadow(0 0 30px #83e1c3)}
+.wl-scene.is-lit .wl-lamp-outline{stroke:#83e1c3}
+.wl-cord{position:absolute;z-index:2;left:calc(50% + 48px);top:calc(50% - 82px);width:34px;height:112px;transform:translateX(-50%);border:0;background:transparent;cursor:ns-resize;touch-action:none;padding:0}
+.wl-cord-line{position:absolute;left:50%;top:0;width:2px;height:79px;background:#9aa4b5;transform:translateX(-50%);transform-origin:top;transition:transform .15s ease}
+.wl-cord-knob{position:absolute;left:50%;top:76px;width:14px;height:22px;border-radius:8px 8px 10px 10px;background:#aab3c2;transform:translateX(-50%);box-shadow:0 3px 10px #0008;transition:transform .15s ease,background .2s ease}
+.wl-cord:hover .wl-cord-line{transform:translateX(-50%) scaleY(1.08)}
+.wl-cord:hover .wl-cord-knob{transform:translate(-50%,4px);background:#83e1c3}
+.wl-cord:focus-visible{outline:2px solid #83e1c3;outline-offset:5px;border-radius:12px}
+.wl-scene-hint{position:absolute;top:calc(50% + 112px);margin:0;padding:10px 15px;border:1px solid #2b3242;border-radius:99px;background:#111620;color:#969fb0;font-size:13px;text-align:center;animation:wl-hint 2s ease-in-out infinite}
+.wl-revealed .wl-card{animation:wl-up .7s .25s cubic-bezier(.2,.8,.2,1) both}
+.wl-delete-trigger{border-color:rgba(243,200,124,.45);color:#f3c87c}
+.wl-delete-trigger:hover{border-color:#f3c87c;background:rgba(243,200,124,.08)}
+.wl-delete-confirm{display:grid;gap:11px;padding:16px;border:1px solid rgba(243,200,124,.4);border-radius:14px;background:rgba(243,200,124,.06)}
+.wl-delete-confirm h4,.wl-delete-confirm p{margin:0}
+.wl-delete-confirm h4{font-size:15px;color:#f3c87c}
+.wl-delete-confirm p{font-size:13px;line-height:1.55;color:#f2f4f8}
+.wl-delete-confirm .wl-delete-items{color:#969fb0}
+.wl-delete-input{width:100%;min-height:46px;padding:0 13px;border:1px solid #414b5d;border-radius:10px;background:#10131b;color:#f2f4f8;font:inherit;font-size:14px;outline:none}
+.wl-delete-input:focus{border-color:#f3c87c;box-shadow:0 0 0 3px rgba(243,200,124,.12)}
+.wl-delete-submit{background:#a33b46;color:#fff;border-color:#c65560}
+.wl-delete-submit:hover:not(:disabled){background:#bd4652}
+.wl-delete-submit:disabled{opacity:.45;cursor:not-allowed}
+.wl-delete-error{color:#ff9da5!important}
+.wl-msg[data-kind="info"]{color:#83e1c3}
+@keyframes wl-hint{0%,100%{transform:translateY(0);border-color:#2b3242}50%{transform:translateY(4px);border-color:#83e1c366}}
+@media(max-width:600px){.wl-lamp-art{transform:translate(-50%,-65%) scale(.84)}.wl-scene-hint{top:calc(50% + 80px);max-width:calc(100% - 34px);font-size:12px}.wl-delete-confirm{padding:13px}}
+@media(prefers-reduced-motion:reduce){.wl-scene,.wl-scene::before,.wl-card,.wl-cord-line,.wl-cord-knob,.wl-scene-hint{transition:none;animation:none}.wl-scene.is-lit::before{transform:none}}
+
+/* Short pull cord: it extends with the student’s downward drag. */
+.wl-cord{left:calc(50% + 64px);top:calc(50% - 74px);height:calc(44px + var(--pull-distance,0px));overflow:visible;touch-action:none}
+.wl-cord-line{height:calc(24px + var(--pull-distance,0px));transition:height .08s ease}
+.wl-cord-knob{top:21px;width:12px;height:16px;transition:top .08s ease,background .2s ease,transform .15s ease}
+.wl-cord.is-pulling .wl-cord-line{transform:translateX(-50%)}
+.wl-cord.is-pulling .wl-cord-knob{top:calc(21px + var(--pull-distance,0px));transform:translateX(-50%);background:#83e1c3}
+.wl-scene.is-lit .wl-lamp-light{opacity:.85;filter:drop-shadow(0 0 18px rgba(131,225,195,.8))}
+.wl-scene.is-lit .wl-lamp-pull{fill:#83e1c3;filter:drop-shadow(0 0 7px #83e1c3)}
+
+.wl-lamp-pending .wl-card{animation:none}.wl-revealed .wl-card{animation:wl-up .7s .25s cubic-bezier(.2,.8,.2,1) both}

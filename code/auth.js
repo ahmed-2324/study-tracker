@@ -42,5 +42,26 @@ window.StudyAuth = (() => {
     await authApi.signOut(auth);
   }
 
-  return { configured, signInWithGoogle, signOut };
+  async function deleteAccount() {
+    await load();
+    let user = auth && auth.currentUser;
+    if (!user && authApi && auth) {
+      user = await new Promise((resolve) => {
+        let unsubscribe = () => {};
+        unsubscribe = authApi.onAuthStateChanged(auth, (current) => { unsubscribe(); resolve(current); }, () => { unsubscribe(); resolve(null); });
+      });
+    }
+    if (!user) throw new Error("auth/no-current-user");
+    try {
+      await authApi.deleteUser(user);
+    } catch (error) {
+      if (!error || error.code !== "auth/requires-recent-login") throw error;
+      const provider = new authApi.GoogleAuthProvider();
+      provider.setCustomParameters({ prompt: "select_account" });
+      await authApi.reauthenticateWithPopup(user, provider);
+      await authApi.deleteUser(user);
+    }
+  }
+
+  return { configured, signInWithGoogle, signOut, deleteAccount };
 })();
