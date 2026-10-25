@@ -25,7 +25,7 @@ state.timerData=null;
 clearInterval(state.tick);
 state.tick=null;
 try{localStorage.removeItem(KEYS.timer)}catch{}}
-document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden")discardActiveTimer();else render()});
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")render()});
 window.addEventListener("pagehide",discardActiveTimer);
 const plural=(n,word)=>n===1?word:word+"s";
 const locale=()=>state.preferences.language==="bn"?"bn-BD":"en-US";
