@@ -14,8 +14,8 @@ A free web app that helps HSC students track their syllabus chapter by chapter, 
 - No ads
 
 ## Syllabus coverage
-- Science group: All Science subjects and ICT, Bangla, English included
-- Coming soon: Humanities, Business Studies
+- Science group: All Science, Humanities subjects and ICT, Bangla, English included
+- Coming soon: Business Studies
 
 The chapter lists have been prepared according to the HSC 2028 syllabus and may contain mistakes. If you find one, please open an issue.
 
@@ -35,7 +35,7 @@ HTML, CSS and vanilla JavaScript. Firebase Authentication is planned for Google 
 Built by Ahmed Samrat as a student project, with help from AI tools (Claude and Codex). I test the app, review the code, and check the syllabus data myself.
 
 ## Roadmap
-- [ ] Finish remaining subjects (then Humanities and Business Studies)
+- [ ] Finish remaining subjects (Business Studies)
 - [ ] Larger text and mobile polish
 - [ ] Google sign-in with cloud sync
 - [ ] Installable offline version (PWA)
