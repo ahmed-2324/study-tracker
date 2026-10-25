@@ -1,0 +1,18 @@
+{
+  "subject": "ict",
+  "name": { "bn": "তথ্য ও যোগাযোগ প্রযুক্তি", "en": "Information and Communication Technology" },
+  "groups": ["science", "humanities", "business"],
+  "papers": [
+    {
+      "paper": 1,
+      "chapters": [
+        { "id": "ict-01", "name": { "bn": "তথ্য ও যোগাযোগ প্রযুক্তি: বিশ্ব ও বাংলাদেশ প্রেক্ষিত", "en": "Information and Communication Technology: World and Bangladesh Perspective" } },
+        { "id": "ict-02", "name": { "bn": "কমিউনিকেশন সিস্টেমস ও নেটওয়ার্কিং", "en": "Communication Systems and Networking" } },
+        { "id": "ict-03", "name": { "bn": "সংখ্যা পদ্ধতি ও ডিজিটাল ডিভাইস", "en": "Number Systems and Digital Devices" } },
+        { "id": "ict-04", "name": { "bn": "ওয়েব ডিজাইন পরিচিতি এবং HTML", "en": "Introduction to Web Design and HTML" } },
+        { "id": "ict-05", "name": { "bn": "প্রোগ্রামিং ভাষা", "en": "Programming Language" } },
+        { "id": "ict-06", "name": { "bn": "ডেটাবেজ ম্যানেজমেন্ট সিস্টেম", "en": "Database Management System" } }
+      ]
+    }
+  ]
+}

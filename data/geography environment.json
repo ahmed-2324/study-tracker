@@ -1,0 +1,163 @@
+
+{
+  "subject": "geography-environment",
+  "name": {
+    "bn": "ভূগোল ও পরিবেশ",
+    "en": "Geography and Environment"
+  },
+  "groups": ["humanities"],
+  "source": "NCTB ভূগোল ও পরিবেশ, HSC",
+  "verified": false,
+  "papers": [
+    {
+      "paper": 1,
+      "chapters": [
+        {
+          "id": "ge1-01",
+          "name": {
+            "bn": "প্রাকৃতিক ভূগোল",
+            "en": "Physical Geography"
+          }
+        },
+        {
+          "id": "ge1-02",
+          "name": {
+            "bn": "পৃথিবীর গঠন",
+            "en": "Structure of the Earth"
+          }
+        },
+        {
+          "id": "ge1-03",
+          "name": {
+            "bn": "ভূমিরূপ পরিবর্তন",
+            "en": "Landform Changes"
+          }
+        },
+        {
+          "id": "ge1-04",
+          "name": {
+            "bn": "বায়ুমণ্ডল ও বায়ুদূষণ",
+            "en": "Atmosphere and Air Pollution"
+          }
+        },
+        {
+          "id": "ge1-05",
+          "name": {
+            "bn": "জলবায়ুর উপাদান ও নিয়ামক",
+            "en": "Elements and Controls of Climate"
+          }
+        },
+        {
+          "id": "ge1-06",
+          "name": {
+            "bn": "জলবায়ুর অঞ্চল ও জলবায়ু পরিবর্তন",
+            "en": "Climatic Regions and Climate Change"
+          }
+        },
+        {
+          "id": "ge1-07",
+          "name": {
+            "bn": "বারিমণ্ডল",
+            "en": "Hydrosphere"
+          }
+        },
+        {
+          "id": "ge1-08",
+          "name": {
+            "bn": "সমুদ্রস্রোত ও জোয়ার-ভাটা",
+            "en": "Ocean Currents and Tides"
+          }
+        },
+        {
+          "id": "ge1-09",
+          "name": {
+            "bn": "জীবমণ্ডল",
+            "en": "Biosphere"
+          }
+        },
+        {
+          "id": "ge1-10",
+          "name": {
+            "bn": "ব্যবহারিক মানচিত্র ও স্কেল",
+            "en": "Practical Maps and Scale"
+          }
+        }
+      ]
+    },
+    {
+      "paper": 2,
+      "chapters": [
+        {
+          "id": "ge2-01",
+          "name": {
+            "bn": "জনসংখ্যা",
+            "en": "Population"
+          }
+        },
+        {
+          "id": "ge2-02",
+          "name": {
+            "bn": "মানব ভূগোল",
+            "en": "Human Geography"
+          }
+        },
+        {
+          "id": "ge2-03",
+          "name": {
+            "bn": "বসতি",
+            "en": "Settlement"
+          }
+        },
+        {
+          "id": "ge2-04",
+          "name": {
+            "bn": "কৃষি",
+            "en": "Agriculture"
+          }
+        },
+        {
+          "id": "ge2-05",
+          "name": {
+            "bn": "খনিজ ও শক্তি সম্পদ",
+            "en": "Mineral and Energy Resources"
+          }
+        },
+        {
+          "id": "ge2-06",
+          "name": {
+            "bn": "শিল্প",
+            "en": "Industry"
+          }
+        },
+        {
+          "id": "ge2-07",
+          "name": {
+            "bn": "পরিবহন ও যোগাযোগ",
+            "en": "Transport and Communication"
+          }
+        },
+        {
+          "id": "ge2-08",
+          "name": {
+            "bn": "বাণিজ্য",
+            "en": "Trade"
+          }
+        },
+        {
+          "id": "ge2-09",
+          "name": {
+            "bn": "দূষণ ও দুর্যোগ",
+            "en": "Pollution and Disasters"
+          }
+        },
+        {
+          "id": "ge2-10",
+          "name": {
+            "bn": "মানচিত্র অভিক্ষেপ",
+            "en": "Map Projection"
+          }
+        }
+      ]
+    }
+  ]
+}

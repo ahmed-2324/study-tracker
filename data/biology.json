@@ -1,0 +1,41 @@
+{
+  "subject": "Biology",
+  "name": { "bn": "জীববিজ্ঞান", "en": "Biology" },
+  "groups": ["science"],
+  "papers": [
+    {
+      "paper": 1,
+        "chapters": [
+    { "id": "bio1-01", "name": { "bn": "কোষ ও এর গঠন", "en": "Cell and Its Structure" } },
+    { "id": "bio1-02", "name": { "bn": "কোষ বিভাজন", "en": "Cell Division" } },
+    { "id": "bio1-03", "name": { "bn": "কোষ রসায়ন", "en": "Cell Chemistry" } },
+    { "id": "bio1-04", "name": { "bn": "অণুজীব", "en": "Microorganisms" } },
+    { "id": "bio1-05", "name": { "bn": "শৈবাল ও ছত্রাক", "en": "Algae and Fungi" } },
+    { "id": "bio1-06", "name": { "bn": "ব্রায়োফাইটা ও টেরিডোফাইটা", "en": "Bryophyta and Pteridophyta" } },
+    { "id": "bio1-07", "name": { "bn": "নগ্নবীজী ও আবৃতবীজী উদ্ভিদ", "en": "Gymnosperms and Angiosperms" } },
+    { "id": "bio1-08", "name": { "bn": "টিস্যু ও টিস্যুতন্ত্র", "en": "Tissues and Tissue Systems" } },
+    { "id": "bio1-09", "name": { "bn": "উদ্ভিদ শারীরতত্ত্ব", "en": "Plant Physiology" } },
+    { "id": "bio1-10", "name": { "bn": "উদ্ভিদ প্রজনন", "en": "Plant Reproduction" } },
+    { "id": "bio1-11", "name": { "bn": "জীবপ্রযুক্তি", "en": "Biotechnology" } },
+    { "id": "bio1-12", "name": { "bn": "জীবের পরিবেশ, বিস্তার ও সংরক্ষণ", "en": "Organisms and Environment, Distribution and Conservation" } }
+  ]
+    },
+    {
+      "paper": 2,
+      "chapters": [
+    { "id": "bio2-01", "name": { "bn": "প্রাণীর বিভিন্নতা ও শ্রেণিবিন্যাস", "en": "Animal Diversity and Classification" } },
+    { "id": "bio2-02", "name": { "bn": "প্রাণীর পরিচিতি", "en": "Introduction to Animals" } },
+    { "id": "bio2-03", "name": { "bn": "পরিপাক ও শোষণ", "en": "Digestion and Absorption" } },
+    { "id": "bio2-04", "name": { "bn": "রক্ত ও সঞ্চালন", "en": "Blood and Circulation" } },
+    { "id": "bio2-05", "name": { "bn": "শ্বাসক্রিয়া ও শ্বসন", "en": "Breathing and Respiration" } },
+    { "id": "bio2-06", "name": { "bn": "বর্জ্য ও নিষ্কাশন", "en": "Waste and Excretion" } },
+    { "id": "bio2-07", "name": { "bn": "চলন ও অঙ্গচালনা", "en": "Locomotion and Movement" } },
+    { "id": "bio2-08", "name": { "bn": "সমন্বয় ও নিয়ন্ত্রণ", "en": "Coordination and Control" } },
+    { "id": "bio2-09", "name": { "bn": "মানব জীবনের ধারাবাহিকতা", "en": "Continuity of Human Life" } },
+    { "id": "bio2-10", "name": { "bn": "মানবদেহের প্রতিরক্ষা", "en": "Human Immunity" } },
+    { "id": "bio2-11", "name": { "bn": "জিনতত্ত্ব ও বিবর্তন", "en": "Genetics and Evolution" } },
+    { "id": "bio2-12", "name": { "bn": "প্রাণীর আচরণ", "en": "Animal Behaviour" } }
+  ]
+    }
+  ]
+}

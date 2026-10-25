@@ -1,0 +1,142 @@
+
+{
+  "subject": "history",
+  "name": {
+    "bn": "ইতিহাস",
+    "en": "History"
+  },
+  "groups": ["humanities"],
+  "source": "NCTB ইতিহাস, HSC",
+  "verified": false,
+  "papers": [
+    {
+      "paper": 1,
+      "chapters": [
+        {
+          "id": "hi1-01",
+          "name": {
+            "bn": "ভারতবর্ষে ইউরোপীয় আগমন : ইংরেজ আধিপত্য প্রতিষ্ঠা",
+            "en": "European Arrival in India: Establishment of British Supremacy"
+          }
+        },
+        {
+          "id": "hi1-02",
+          "name": {
+            "bn": "কোম্পানি আমল",
+            "en": "Company Rule"
+          }
+        },
+        {
+          "id": "hi1-03",
+          "name": {
+            "bn": "ইংরেজ ঔপনিবেশিক শাসন : ব্রিটিশ আমল",
+            "en": "British Colonial Rule: The British Period"
+          }
+        },
+        {
+          "id": "hi1-04",
+          "name": {
+            "bn": "পাকিস্তানি আমলে বাংলা : ভাষা আন্দোলন ও এর গতিপ্রকৃতি",
+            "en": "Bengal during the Pakistan Period: The Language Movement and Its Course"
+          }
+        },
+        {
+          "id": "hi1-05",
+          "name": {
+            "bn": "পূর্ব বাংলার স্বায়ত্তশাসন ও স্বাধিকার আন্দোলন",
+            "en": "The Autonomy and Self-Rule Movement in East Bengal"
+          }
+        },
+        {
+          "id": "hi1-06",
+          "name": {
+            "bn": "বাংলাদেশের স্বাধীনতা ঘোষণা ও মুক্তিযুদ্ধ",
+            "en": "Declaration of Bangladesh's Independence and the Liberation War"
+          }
+        },
+        {
+          "id": "hi1-07",
+          "name": {
+            "bn": "মুক্তিযুদ্ধে বাংলাদেশ সরকার (মুজিবনগর) কার্যক্রম",
+            "en": "The Activities of the Bangladesh Government (Mujibnagar Government) during the Liberation War"
+          }
+        },
+        {
+          "id": "hi1-08",
+          "name": {
+            "bn": "মুক্তিযুদ্ধে প্রবাসী বাঙালি ও বহির্বিশ্ব",
+            "en": "Expatriate Bengalis and the International Community during the Liberation War"
+          }
+        }
+      ]
+    },
+    {
+      "paper": 2,
+      "chapters": [
+        {
+          "id": "hi2-01",
+          "name": {
+            "bn": "শিল্প বিপ্লব",
+            "en": "Industrial Revolution"
+          }
+        },
+        {
+          "id": "hi2-02",
+          "name": {
+            "bn": "ফরাসি বিপ্লব",
+            "en": "French Revolution"
+          }
+        },
+        {
+          "id": "hi2-03",
+          "name": {
+            "bn": "প্রথম বিশ্বযুদ্ধ এবং ভার্সাই সন্ধি ও লীগ অব নেশনস",
+            "en": "The First World War, the Treaty of Versailles, and the League of Nations"
+          }
+        },
+        {
+          "id": "hi2-04",
+          "name": {
+            "bn": "বলশেভিক বিপ্লব",
+            "en": "Bolshevik Revolution"
+          }
+        },
+        {
+          "id": "hi2-05",
+          "name": {
+            "bn": "হিটলার ও মুসোলিনির উত্থান এবং দ্বিতীয় বিশ্বযুদ্ধ",
+            "en": "The Rise of Hitler and Mussolini and the Second World War"
+          }
+        },
+        {
+          "id": "hi2-06",
+          "name": {
+            "bn": "জাতিসংঘ এবং বিশ্বশান্তি",
+            "en": "The United Nations and World Peace"
+          }
+        },
+        {
+          "id": "hi2-07",
+          "name": {
+            "bn": "স্নায়ুযুদ্ধ : পুঁজিবাদ ও সমাজতান্ত্রিক বিশ্বের দ্বন্দ্ব",
+            "en": "The Cold War: Conflict between the Capitalist and Socialist Worlds"
+          }
+        },
+        {
+          "id": "hi2-08",
+          "name": {
+            "bn": "স্নায়ুযুদ্ধ-পরবর্তী বিশ্ব",
+            "en": "The Post-Cold War World"
+          }
+        },
+        {
+          "id": "hi2-09",
+          "name": {
+            "bn": "বর্ণবাদবিরোধী আন্দোলন",
+            "en": "Anti-Racism Movement"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "subject": "chemistry",
+  "name": { "bn": "রসায়ন", "en": "Chemistry" },
+  "groups": ["science"],
+  "papers": [
+    {
+      "paper": 1,
+       "chapters": [
+        { "id": "ch1-01", "name": { "bn": "ল্যাবরেটরির নিরাপদ ব্যবহার", "en": "Safe Use of Laboratory" } },
+        { "id": "ch1-02", "name": { "bn": "গুণগত রসায়ন", "en": "Qualitative Chemistry" } },
+        { "id": "ch1-03", "name": { "bn": "মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক বন্ধন", "en": "Periodic Properties of Elements and Chemical Bonding" } },
+        { "id": "ch1-04", "name": { "bn": "রাসায়নিক পরিবর্তন", "en": "Chemical Changes" } },
+        { "id": "ch1-05", "name": { "bn": "কর্মমুখী রসায়ন", "en": "Vocational Chemistry" } }
+  ]
+    }, 
+    {
+        "paper": 2,
+          "chapters": [
+    { "id": "ch2-01", "name": { "bn": "পরিবেশ রসায়ন", "en": "Environmental Chemistry" } },
+    { "id": "ch2-02", "name": { "bn": "জৈব যৌগ", "en": "Organic Chemistry" } },
+    { "id": "ch2-03", "name": { "bn": "পরিমাণগত রসায়ন", "en": "Quantitative Chemistry" } },
+    { "id": "ch2-04", "name": { "bn": "তড়িৎ রসায়ন", "en": "Electrochemistry" } },
+    { "id": "ch2-05", "name": { "bn": "অর্থনৈতিক রসায়ন", "en": "Economic Chemistry" } }
+  ]
+    }
+  ]
+}
