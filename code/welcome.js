@@ -2,6 +2,7 @@
 // Also provides the Account panel used on the Settings page.
 window.StudyWelcome = (() => {
   const ACCOUNT_KEY = "hsc-tracker-account-v1";
+  const BRAND_INTRO_KEY = "hsc-tracker-brand-intro-v1";
   // Flip to true once progress is actually saved to the student's account.
   // Until then the app never claims that signing in backs anything up.
   const SYNC_READY = false;
@@ -24,16 +25,16 @@ window.StudyWelcome = (() => {
       pull: "Pull the cord to switch on your study space",
       deleteTitle: "Erase your data",
       eraseDevice: "Erase my data on this device",
-      deleteAccount: "Delete my Studyflow account",
+      deleteAccount: "Delete my Mogno account",
       deleteIntroGuest: "This permanently erases the HSC tracker data stored in this browser. It cannot be undone.",
-      deleteIntroGoogle: "This permanently deletes your Studyflow sign-in account and this device’s HSC tracker data. Study data is not synced to the cloud, so there are no cloud study records to delete.",
+      deleteIntroGoogle: "This permanently deletes your Mogno sign-in account and this device’s HSC tracker data. Study data is not synced to the cloud, so there are no cloud study records to delete.",
       deleteItems: "This includes syllabus status, weak-chapter flags, revision history, study sessions, goals, preferences, and the saved account on this device.",
       typeDelete: "Type DELETE to confirm",
       confirmDelete: "Confirm permanent deletion",
       deleting: "Deleting…",
       deleteError: "Deletion could not be completed. Your browser data is still here. Please try again.",
       deletedGuest: "Your data on this device has been erased.",
-      deletedGoogle: "Your Studyflow sign-in account and this device’s data have been erased.",
+      deletedGoogle: "Your Mogno sign-in account and this device’s data have been erased.",
       reauth: "For security, Google needs you to sign in again before deleting your account.",
       back: "Back to my dashboard",
       signedInAs: "Signed in as",
@@ -67,20 +68,20 @@ window.StudyWelcome = (() => {
       soonMsg: "Google সাইন-ইন এখনো চালু হয়নি। আপাতত গেস্ট হিসেবে চালিয়ে যেতে পারো।",
       or: "অথবা",
       guest: "গেস্ট হিসেবে চালিয়ে যাও",
-      warning: "Your data is saved in this browser only. Clearing browser data may permanently erase your progress.",
+      warning: "তোমার তথ্য শুধু এই ব্রাউজারেই সংরক্ষিত থাকে। ব্রাউজারের তথ্য মুছে ফেললে তোমার অগ্রগতি স্থায়ীভাবে হারিয়ে যেতে পারে।",
       pull: "তোমার পড়ার জায়গার আলো জ্বালাতে কর্ড টানো",
       deleteTitle: "তোমার ডেটা মুছে ফেলো",
       eraseDevice: "এই ডিভাইসের ডেটা মুছে ফেলো",
-      deleteAccount: "আমার Studyflow অ্যাকাউন্ট মুছে ফেলো",
+      deleteAccount: "আমার মগ্ন অ্যাকাউন্ট মুছে ফেলো",
       deleteIntroGuest: "এতে এই ব্রাউজারে থাকা HSC ট্র্যাকার ডেটা স্থায়ীভাবে মুছে যাবে। এটি ফিরিয়ে আনা যাবে না।",
-      deleteIntroGoogle: "এতে তোমার Studyflow সাইন-ইন অ্যাকাউন্ট এবং এই ডিভাইসের HSC ট্র্যাকার ডেটা স্থায়ীভাবে মুছে যাবে। পড়ার ডেটা ক্লাউডে সিঙ্ক হয় না, তাই মুছে ফেলার মতো ক্লাউডের পড়ার রেকর্ড নেই।",
+      deleteIntroGoogle: "এতে তোমার মগ্ন সাইন-ইন অ্যাকাউন্ট এবং এই ডিভাইসের HSC ট্র্যাকার ডেটা স্থায়ীভাবে মুছে যাবে। পড়ার ডেটা ক্লাউডে সিঙ্ক হয় না, তাই মুছে ফেলার মতো ক্লাউডের পড়ার রেকর্ড নেই।",
       deleteItems: "এর মধ্যে সিলেবাসের অবস্থা, দুর্বল অধ্যায়ের চিহ্ন, রিভিশন ইতিহাস, পড়ার সেশন, লক্ষ্য, পছন্দ এবং এই ডিভাইসে সংরক্ষিত অ্যাকাউন্ট অন্তর্ভুক্ত।",
       typeDelete: "নিশ্চিত করতে DELETE লিখো",
       confirmDelete: "স্থায়ীভাবে মুছে ফেলা নিশ্চিত করো",
       deleting: "মুছে ফেলা হচ্ছে…",
       deleteError: "ডেটা মুছে ফেলা যায়নি। ব্রাউজারের তথ্য এখনো আছে। আবার চেষ্টা করো।",
       deletedGuest: "এই ডিভাইসের ডেটা মুছে ফেলা হয়েছে।",
-      deletedGoogle: "তোমার Studyflow সাইন-ইন অ্যাকাউন্ট এবং এই ডিভাইসের ডেটা মুছে ফেলা হয়েছে।",
+      deletedGoogle: "তোমার মগ্ন সাইন-ইন অ্যাকাউন্ট এবং এই ডিভাইসের ডেটা মুছে ফেলা হয়েছে।",
       reauth: "নিরাপত্তার জন্য অ্যাকাউন্ট মুছতে Google-এ আবার সাইন-ইন করতে হবে।",
       back: "আমার ড্যাশবোর্ডে ফিরে যাও",
       signedInAs: "সাইন-ইন করা আছে:",
@@ -236,7 +237,7 @@ window.StudyWelcome = (() => {
     const brand = h("div", "wl-brand");
     const mark = h("span", "wl-mark");
     mark.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>';
-    brand.append(mark, h("span", "wl-brand-name", "Studyflow"));
+    brand.append(mark, h("span", "wl-brand-name", "Mogno"));
     hero.append(brand, h("h1", "", t.tagline), h("p", "wl-sub", t.sub));
     const feats = h("ul", "wl-features");
     t.features.forEach((f) => feats.append(h("li", "", f)));
@@ -292,7 +293,11 @@ window.StudyWelcome = (() => {
       const scene = h("div", "wl-scene");
       scene.setAttribute("role", "dialog");
       scene.setAttribute("aria-label", t.pull);
-      scene.append(h("div", "wl-scene-brand", "Studyflow"));
+      let firstBrandIntro = true;
+      try { firstBrandIntro = localStorage.getItem(BRAND_INTRO_KEY) !== "1"; } catch { /* show the intro when storage is unavailable */ }
+      const sceneBrand = h("div", "wl-scene-brand");
+      sceneBrand.append(h("span", "wl-intro-title", lang() === "bn" ? "মগ্ন HSC স্টাডি ট্র্যাকার-এ স্বাগতম" : "Welcome to Mogno HSC Study Tracker"), h("small", "wl-intro-mark", "মগ্ন"));
+      scene.append(sceneBrand);
       const art = h("div", "wl-lamp-art");
       art.setAttribute("aria-hidden", "true");
       art.innerHTML = '<svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="lampShade" x1="85" y1="40" x2="196" y2="101" gradientUnits="userSpaceOnUse"><stop stop-color="#414b5d"/><stop offset=".42" stop-color="#252d3b"/><stop offset="1" stop-color="#131923"/></linearGradient><linearGradient id="lampStem" x1="124" y1="116" x2="153" y2="218" gradientUnits="userSpaceOnUse"><stop stop-color="#586477"/><stop offset=".5" stop-color="#222a37"/><stop offset="1" stop-color="#414b5d"/></linearGradient><radialGradient id="lampGlow"><stop stop-color="#c8ffec"/><stop offset=".25" stop-color="#83e1c3"/><stop offset="1" stop-color="#83e1c3" stop-opacity="0"/></radialGradient><filter id="lampShadow" x="45" y="10" width="190" height="260" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="8"/></filter></defs><ellipse cx="140" cy="252" rx="60" ry="10" fill="#000" opacity=".45" filter="url(#lampShadow)"/><path d="M101 216h78c14 0 23 8 26 20l2 8H73l2-8c3-12 12-20 26-20Z" fill="url(#lampStem)" stroke="#596579" stroke-width="2"/><path d="M111 217c7-5 16-8 29-8s22 3 29 8" stroke="#768297" stroke-width="1.5" opacity=".55"/><path d="M139 210v-75" stroke="url(#lampStem)" stroke-width="13" stroke-linecap="round"/><path d="M140 134c-1-25 19-42 42-45" stroke="#667287" stroke-width="13" stroke-linecap="round"/><path d="M140 134c-1-25 19-42 42-45" stroke="#252e3b" stroke-width="8" stroke-linecap="round"/><circle cx="140" cy="133" r="10" fill="#252d3b" stroke="#667287" stroke-width="3"/><circle cx="140" cy="133" r="3" fill="#aab4c5"/><path d="M181 89 169 49c-2-7 3-13 10-13h32c7 0 12 6 10 13l-12 40c-2 8-9 13-17 13s-15-5-17-13Z" fill="url(#lampShade)" stroke="#687488" stroke-width="2"/><path d="M171 89h48" stroke="#8792a5" stroke-width="3" stroke-linecap="round"/><path d="M176 48c8-6 23-8 37-3" stroke="#a8b2c3" stroke-width="2" stroke-linecap="round" opacity=".4"/><path class="wl-lamp-bulb" d="M188 96c0 7 5 11 5 17h13c0-6 5-10 5-17" fill="#343c49" stroke="#596579" stroke-width="2"/><path class="wl-lamp-light" d="M189 107h22l22 75h-66l22-75Z" fill="url(#lampGlow)" opacity="0"/><path d="M204 43v40" stroke="#9aa5b8" stroke-width="2" stroke-linecap="round" opacity=".6"/><circle class="wl-lamp-pull" cx="204" cy="85" r="4.5" fill="#aab3c2"/></svg>';
@@ -307,10 +312,19 @@ window.StudyWelcome = (() => {
       scene.append(art, pull);
       const switchOn = () => {
         if (!scene.isConnected || scene.classList.contains("is-lit")) return;
+        if (firstBrandIntro) try { localStorage.setItem(BRAND_INTRO_KEY, "1"); } catch { /* keep the welcome usable without storage */ }
         scene.classList.add("is-lit");
-        root.classList.add("wl-revealed");
         clearTimeout(autoOn);
-        setTimeout(() => scene.remove(), 1100);
+        if (firstBrandIntro) {
+          setTimeout(() => { if (scene.isConnected) scene.classList.add("show-intro"); }, 180);
+          setTimeout(() => { if (scene.isConnected) scene.classList.add("is-exiting"); }, 1950);
+          setTimeout(() => root.classList.add("wl-revealed"), 2500);
+          setTimeout(() => scene.remove(), 3250);
+        } else {
+          scene.classList.add("is-exiting");
+          root.classList.add("wl-revealed");
+          setTimeout(() => scene.remove(), 900);
+        }
       };
       root.append(scene);
       const autoOn = setTimeout(switchOn, 10000);

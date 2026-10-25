@@ -98,7 +98,7 @@
 .wl-scene{position:fixed;inset:0;z-index:10;display:grid;place-items:center;overflow:hidden;background:#080b11;color:#f2f4f8;transition:opacity .85s .2s ease}
 .wl-scene::before{content:"";position:absolute;width:min(105vw,1000px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(131,225,195,.25) 0,rgba(131,225,195,.12) 28%,rgba(131,225,195,.045) 48%,transparent 70%);opacity:0;transform:scale(.2);transition:transform 1s cubic-bezier(.2,.8,.2,1),opacity .45s ease;pointer-events:none}
 .wl-scene.is-lit::before{opacity:1;transform:scale(1.25)}
-.wl-scene.is-lit{opacity:0;pointer-events:none}
+.wl-scene.is-exiting{opacity:0;pointer-events:none;transition:opacity .75s ease}
 .wl-scene-brand{position:absolute;top:clamp(28px,7vh,64px);font:700 18px Manrope, sans-serif;letter-spacing:.04em;color:#f2f4f8}
 .wl-lamp-art{position:absolute;left:50%;top:50%;width:280px;height:260px;transform:translate(-50%,-56%);filter:drop-shadow(0 16px 34px #0008)}
 .wl-lamp-art svg{width:100%;height:100%;overflow:visible}
@@ -131,6 +131,8 @@
 .wl-msg[data-kind="info"]{color:#83e1c3}
 @keyframes wl-hint{0%,100%{transform:translateY(0);border-color:#2b3242}50%{transform:translateY(4px);border-color:#83e1c366}}
 @media(max-width:600px){.wl-lamp-art{transform:translate(-50%,-65%) scale(.84)}.wl-scene-hint{top:calc(50% + 80px);max-width:calc(100% - 34px);font-size:12px}.wl-delete-confirm{padding:13px}}
+:root[data-theme="light"] .wl-warning{background:#fff4d6;border-color:#d5a638;color:#684600}
+:root[data-theme="light"] .wl-warning p{color:#513900}
 @media(prefers-reduced-motion:reduce){.wl-scene,.wl-scene::before,.wl-card,.wl-cord-line,.wl-cord-knob,.wl-scene-hint{transition:none;animation:none}.wl-scene.is-lit::before{transform:none}}
 
 /* Short pull cord: it extends with the student’s downward drag. */
@@ -143,3 +145,14 @@
 .wl-scene.is-lit .wl-lamp-pull{fill:#83e1c3;filter:drop-shadow(0 0 7px #83e1c3)}
 
 .wl-lamp-pending .wl-card{animation:none}.wl-revealed .wl-card{animation:wl-up .7s .25s cubic-bezier(.2,.8,.2,1) both}
+
+/* Mogno first-visit reveal: warm light, crisp wordmark, then the sign-in card. */
+.wl-scene-brand{top:clamp(28px,12vh,112px);width:min(92vw,760px);display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;opacity:0;transform:translateY(13px) scale(.985);filter:blur(8px)}
+.wl-scene.show-intro .wl-scene-brand{animation:wl-brand-reveal .95s cubic-bezier(.18,.78,.2,1) both}
+.wl-intro-title{font:700 clamp(19px,3vw,28px)/1.2 Manrope,"Hind Siliguri",sans-serif;letter-spacing:.015em;color:#f2f4f8;text-shadow:0 0 32px rgba(131,225,195,.28)}
+.wl-intro-mark{font:500 14px/1.2 "Hind Siliguri",sans-serif;letter-spacing:.18em;color:#83e1c3}
+.wl-intro-mark::before{content:"";display:block;width:38px;height:1px;margin:0 auto 6px;background:linear-gradient(90deg,transparent,#83e1c3,transparent);box-shadow:0 0 12px rgba(131,225,195,.7)}
+@keyframes wl-brand-reveal{0%{opacity:0;transform:translateY(13px) scale(.985);filter:blur(8px)}65%{opacity:1;filter:blur(0)}100%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+.wl-revealed .wl-card{animation:wl-up .72s cubic-bezier(.2,.8,.2,1) both}
+@media(max-width:600px){.wl-intro-title{font-size:clamp(17px,5vw,23px);padding:0 8px}}
+@media(prefers-reduced-motion:reduce){.wl-scene-brand{animation:none;opacity:0;transform:none;filter:none}.wl-scene.show-intro .wl-scene-brand,.wl-revealed .wl-card{animation:none;opacity:1;transform:none;filter:none}.wl-scene.is-exiting{transition:none}}
