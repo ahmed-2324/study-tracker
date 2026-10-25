@@ -18,6 +18,15 @@ state.sessions=current;
 return true}const state={progress:read(KEYS.progress,{}),preferences:read(KEYS.preferences,{theme:"dark",goal:240,targets:{},language:"en"}),sessions:loadSessions(),weak:read(KEYS.weak,[]),timerData:read(KEYS.timer,null),revisions:read(KEYS.revisions,[]),progressHistory:read(KEYS.progressHistory,[]),subjects:Array.isArray(window.HSC_SUBJECTS)?window.HSC_SUBJECTS:[],page:"overview",syllabusSubject:null,syllabusPaper:null,syllabusGroup:"science",historyMode:"daily",reviewMonth:new Date().getMonth(),tick:null,lastManualAt:0};
 state.preferences.language=state.preferences.language==="bn"?"bn":"en";
 state.syllabusGroup=["science","business","humanities"].includes(state.preferences.group)?state.preferences.group:"science";
+// Active timer sessions are temporary. Never restore an abandoned session on a fresh page load.
+if(state.timerData){state.timerData=null;try{localStorage.removeItem(KEYS.timer)}catch{}}
+function discardActiveTimer(){if(!state.timerData)return;
+state.timerData=null;
+clearInterval(state.tick);
+state.tick=null;
+try{localStorage.removeItem(KEYS.timer)}catch{}}
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden")discardActiveTimer();else render()});
+window.addEventListener("pagehide",discardActiveTimer);
 const plural=(n,word)=>n===1?word:word+"s";
 const locale=()=>state.preferences.language==="bn"?"bn-BD":"en-US";
 const subjectName=s=>state.preferences.language==="bn"?s.name.bn:s.name.en;
@@ -327,7 +336,7 @@ if(!chapters.length)list.append(el("p","empty-inline","Chapter data for this pap
 const sections=[...new Set(chapters.map(c=>c.section||""))];
 sections.forEach(section=>{if(section)list.append(el("div","section-kicker chapter-section-title",section));
 chapters.filter(c=>(c.section||"")===section).forEach(c=>{const row=el("div","chapter-row"),names=el("span","chapter-names");
-names.append(el("strong","",chapterName(c)));if(c.itemType)names.append(el("small","",state.preferences.language==="bn"?(c.itemType==="Novel"?"উপন্যাস":"নাটক"):c.itemType));
+if(c.kind)names.append(el("small","chapter-category",state.preferences.language==="bn"?({Story:"গল্প",Poem:"কবিতা",Novel:"উপন্যাস",Drama:"নাটক"}[c.kind]||c.kind):c.kind));names.append(el("strong","",chapterName(c)));if(c.itemType)names.append(el("small","",state.preferences.language==="bn"?(c.itemType==="Novel"?"উপন্যাস":"নাটক"):c.itemType));
 const status=document.createElement("select");
 status.className="status-select status-"+statusOf(c);
 status.setAttribute("aria-label",tx(`Status for ${chapterName(c)}`));
