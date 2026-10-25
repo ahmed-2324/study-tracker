@@ -1,5 +1,6 @@
+
 {
-  "subject": "psychology",
+  "subject": "monobiggan",
   "name": {
     "bn": "মনোবিজ্ঞান",
     "en": "Psychology"
@@ -12,71 +13,57 @@
         {
           "id": "psy1-01",
           "name": {
-            "bn": "মনোবিজ্ঞানের পরিচয়",
+            "bn": "মনোবিজ্ঞানের পরিচিতি",
             "en": "Introduction to Psychology"
           }
         },
         {
           "id": "psy1-02",
           "name": {
-            "bn": "মনোবিজ্ঞানের ক্রমবিকাশ",
-            "en": "Development of Psychology"
+            "bn": "আচরণ ও আচরণের বিকাশ",
+            "en": "Behavior and the Development of Behavior"
           }
         },
         {
           "id": "psy1-03",
           "name": {
-            "bn": "মনোবিজ্ঞানের জৈবিক ভিত্তি",
-            "en": "Biological Basis of Psychology"
+            "bn": "আচরণের জৈবিক ভিত্তি",
+            "en": "Biological Basis of Behavior"
           }
         },
         {
           "id": "psy1-04",
           "name": {
-            "bn": "অনুভূতি ও সংবেদন",
-            "en": "Feeling and Sensation"
+            "bn": "প্রেষণা ও আবেগ",
+            "en": "Motivation and Emotion"
           }
         },
         {
           "id": "psy1-05",
           "name": {
-            "bn": "মনোযোগ",
-            "en": "Attention"
+            "bn": "শিক্ষণ ও স্মৃতি",
+            "en": "Learning and Memory"
           }
         },
         {
           "id": "psy1-06",
           "name": {
-            "bn": "প্রেষণা",
-            "en": "Motivation"
+            "bn": "সংবেদন ও প্রত্যক্ষণ",
+            "en": "Sensation and Perception"
           }
         },
         {
           "id": "psy1-07",
           "name": {
-            "bn": "আবেগ",
-            "en": "Emotion"
+            "bn": "বয়ঃসন্ধিকাল ও মানসিক স্বাস্থ্য",
+            "en": "Adolescence and Mental Health"
           }
         },
         {
           "id": "psy1-08",
           "name": {
-            "bn": "শিখন",
-            "en": "Learning"
-          }
-        },
-        {
-          "id": "psy1-09",
-          "name": {
-            "bn": "স্মৃতি",
-            "en": "Memory"
-          }
-        },
-        {
-          "id": "psy1-10",
-          "name": {
-            "bn": "ভুলে যাওয়া",
-            "en": "Forgetting"
+            "bn": "পরিসংখ্যান পরিচিতি",
+            "en": "Introduction to Statistics"
           }
         }
       ]
@@ -87,8 +74,8 @@
         {
           "id": "psy2-01",
           "name": {
-            "bn": "মানসিক প্রক্রিয়া",
-            "en": "Mental Processes"
+            "bn": "পরিসংখ্যান",
+            "en": "Statistics"
           }
         },
         {
@@ -115,43 +102,29 @@
         {
           "id": "psy2-05",
           "name": {
-            "bn": "মানসিক স্বাস্থ্য ও মানসিক রোগ",
-            "en": "Mental Health and Mental Disorders"
+            "bn": "আচরণের উপর পরিবেশের প্রভাব",
+            "en": "Influence of Environment on Behavior"
           }
         },
         {
           "id": "psy2-06",
           "name": {
-            "bn": "মনোবিজ্ঞানের গবেষণা পদ্ধতি",
-            "en": "Research Methods in Psychology"
+            "bn": "মানসিক চাপ এবং চাপ মোকাবিলা",
+            "en": "Psychological Stress and Coping with Stress"
           }
         },
         {
           "id": "psy2-07",
           "name": {
-            "bn": "সামাজিক মনোবিজ্ঞান",
-            "en": "Social Psychology"
+            "bn": "মূল্যবোধ",
+            "en": "Values"
           }
         },
         {
           "id": "psy2-08",
           "name": {
-            "bn": "শিশুর বিকাশ",
-            "en": "Child Development"
-          }
-        },
-        {
-          "id": "psy2-09",
-          "name": {
-            "bn": "শিক্ষা মনোবিজ্ঞান",
-            "en": "Educational Psychology"
-          }
-        },
-        {
-          "id": "psy2-10",
-          "name": {
-            "bn": "শিল্প ও কর্ম মনোবিজ্ঞান",
-            "en": "Industrial and Occupational Psychology"
+            "bn": "মনোবিজ্ঞানের গবেষণার পদ্ধতিসমূহ",
+            "en": "Research Methods in Psychology"
           }
         }
       ]

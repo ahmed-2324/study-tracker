@@ -1,0 +1,142 @@
+
+{
+  "subject": "statistics",
+  "name": {
+    "bn": "পরিসংখ্যান",
+    "en": "Statistics"
+  },
+  "groups": ["humanities"],
+  "source": "NCTB পরিসংখ্যান, HSC",
+  "verified": false,
+  "papers": [
+    {
+      "paper": 1,
+      "chapters": [
+        {
+          "id": "st1-01",
+          "name": {
+            "bn": "পরিসংখ্যান, চলক ও বিভিন্ন প্রতীকের ধারণা",
+            "en": "Statistics, Variables, and Concepts of Various Symbols"
+          }
+        },
+        {
+          "id": "st1-02",
+          "name": {
+            "bn": "তথ্য সংগ্রহ, সংক্ষিপ্তকরণ ও উপস্থাপন",
+            "en": "Data Collection, Summarization, and Presentation"
+          }
+        },
+        {
+          "id": "st1-03",
+          "name": {
+            "bn": "কেন্দ্রীয় প্রবণতার পরিমাপ",
+            "en": "Measures of Central Tendency"
+          }
+        },
+        {
+          "id": "st1-04",
+          "name": {
+            "bn": "বিস্তার পরিমাপ",
+            "en": "Measures of Dispersion"
+          }
+        },
+        {
+          "id": "st1-05",
+          "name": {
+            "bn": "পরিঘাত, বঙ্কিমতা ও সূঁচালতা",
+            "en": "Moments, Skewness, and Kurtosis"
+          }
+        },
+        {
+          "id": "st1-06",
+          "name": {
+            "bn": "সংশ্লেষ ও নির্ভরণ",
+            "en": "Correlation and Regression"
+          }
+        },
+        {
+          "id": "st1-07",
+          "name": {
+            "bn": "কালীন সারি",
+            "en": "Time Series"
+          }
+        },
+        {
+          "id": "st1-08",
+          "name": {
+            "bn": "বাংলাদেশের প্রকাশিত পরিসংখ্যান",
+            "en": "Published Statistics of Bangladesh"
+          }
+        }
+      ]
+    },
+    {
+      "paper": 2,
+      "chapters": [
+        {
+          "id": "st2-01",
+          "name": {
+            "bn": "সম্ভাবনা",
+            "en": "Probability"
+          }
+        },
+        {
+          "id": "st2-02",
+          "name": {
+            "bn": "দৈব চলক ও সম্ভাবনা বিন্যাস",
+            "en": "Random Variables and Probability Distributions"
+          }
+        },
+        {
+          "id": "st2-03",
+          "name": {
+            "bn": "গাণিতিক প্রত্যাশা",
+            "en": "Mathematical Expectation"
+          }
+        },
+        {
+          "id": "st2-04",
+          "name": {
+            "bn": "দ্বিপদী বিন্যাস",
+            "en": "Binomial Distribution"
+          }
+        },
+        {
+          "id": "st2-05",
+          "name": {
+            "bn": "পৈঁসু বিন্যাস",
+            "en": "Poisson Distribution"
+          }
+        },
+        {
+          "id": "st2-06",
+          "name": {
+            "bn": "পরিমিত বিন্যাস",
+            "en": "Normal Distribution"
+          }
+        },
+        {
+          "id": "st2-07",
+          "name": {
+            "bn": "নমুনায়ন",
+            "en": "Sampling"
+          }
+        },
+        {
+          "id": "st2-08",
+          "name": {
+            "bn": "সূচক সংখ্যা",
+            "en": "Index Numbers"
+          }
+        },
+        {
+          "id": "st2-09",
+          "name": {
+            "bn": "জন পরিসংখ্যান",
+            "en": "Population Statistics"
+          }
+        }
+      ]
+    }
+  ]
+}

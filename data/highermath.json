@@ -1,0 +1,37 @@
+{
+  "subject": "higher-math",
+  "name": { "bn": "উচ্চতর গণিত", "en": "Higher Math" },
+  "groups": ["science"],
+  "papers": [
+    {
+      "paper": 1,
+      "chapters": [
+        { "id": "hm1-01", "name": { "bn": "ম্যাট্রিক্স ও নির্ণায়ক", "en": "Matrices and Determinants" } },
+        { "id": "hm1-02", "name": { "bn": "ভেক্টর", "en": "Vectors" } },
+        { "id": "hm1-03", "name": { "bn": "সরলরেখা", "en": "Straight Lines" } },
+        { "id": "hm1-04", "name": { "bn": "বৃত্ত", "en": "Circle" } },
+        { "id": "hm1-05", "name": { "bn": "বিন্যাস ও সমাবেশ", "en": "Permutation and Combination" } },
+        { "id": "hm1-06", "name": { "bn": "ত্রিকোণমিতিক অনুপাত", "en": "Trigonometric Ratios" } },
+        { "id": "hm1-07", "name": { "bn": "সংযুক্ত কোণের ত্রিকোণমিতিক অনুপাত", "en": "Trigonometric Ratios of Associated Angles" } },
+        { "id": "hm1-08", "name": { "bn": "ফাংশন ও ফাংশনের লেখচিত্র", "en": "Functions and Graphs of Functions" } },
+        { "id": "hm1-09", "name": { "bn": "অন্তরীকরণ", "en": "Differentiation" } },
+        { "id": "hm1-10", "name": { "bn": "যোগজীকরণ", "en": "Integration" } }
+      ]
+    },
+    {
+      "paper": 2,
+      "chapters": [
+        { "id": "hm2-01", "name": { "bn": "বাস্তব সংখ্যা ও অসমতা", "en": "Real Numbers and Inequalities" } },
+        { "id": "hm2-02", "name": { "bn": "যোগাশ্রয়ী প্রোগ্রাম", "en": "Linear Programming" } },
+        { "id": "hm2-03", "name": { "bn": "জটিল সংখ্যা", "en": "Complex Numbers" } },
+        { "id": "hm2-04", "name": { "bn": "বহুপদী ও বহুপদী সমীকরণ", "en": "Polynomials and Polynomial Equations" } },
+        { "id": "hm2-05", "name": { "bn": "দ্বিপদী বিস্তৃতি", "en": "Binomial Expansion" } },
+        { "id": "hm2-06", "name": { "bn": "কণিক", "en": "Conics" } },
+        { "id": "hm2-07", "name": { "bn": "বিপরীত ত্রিকোণমিতিক ফাংশন ও ত্রিকোণমিতিক সমীকরণ", "en": "Inverse Trigonometric Functions and Trigonometric Equations" } },
+        { "id": "hm2-08", "name": { "bn": "স্থিতিবিদ্যা", "en": "Statics" } },
+        { "id": "hm2-09", "name": { "bn": "সমতলে বস্তুকণার গতি", "en": "Motion of a Particle in a Plane" } },
+        { "id": "hm2-10", "name": { "bn": "বিস্তার পরিমাপ ও সম্ভাবনা", "en": "Measures of Dispersion and Probability" } }
+      ]
+    }
+  ]
+}
