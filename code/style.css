@@ -56,3 +56,8 @@
 .chapter-section-title{font-size:12px;font-weight:750;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}
 .mobile-brand{display:none}
 @media(max-width:760px){.mobile-brand{display:block;margin-right:auto;color:var(--text);font:800 15px Manrope,sans-serif;letter-spacing:.1em}.topbar .breadcrumb{display:none}}
+.weekly-period{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0 2px;padding:10px 13px;border:1px solid color-mix(in srgb,var(--accent) 24%,var(--line));border-radius:12px;background:linear-gradient(110deg,color-mix(in srgb,var(--accent) 8%,var(--surface)),var(--surface))}
+.weekly-period-label{color:var(--muted);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.weekly-period strong{color:var(--accent);font:650 12px Manrope,"Hind Siliguri",sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.comparison-summary .stat-detail{font-size:8px;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:420px){.weekly-period{padding:9px 10px}.weekly-period strong{font-size:10px}.comparison-summary .stat-detail{font-size:7px}}
